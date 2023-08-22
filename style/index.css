@@ -1,5 +1,6 @@
 header, main, footer {min-width: 900px; padding: 0 100px;}
 body, html {scroll-behavior: smooth;}
+main > section {padding-bottom: 150px;}
 /* header */
 header {
     width: 100%;
@@ -27,7 +28,6 @@ header .gnb nav a.active::after {
 main {}
 /* #home */
 main #home {
-    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
@@ -48,16 +48,16 @@ main #profile h1 em {font-size: 2.441rem; font-weight: 700; color:#FFD523;}
 main #profile .container {
     display: flex; 
     margin-top: 100px;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 main #profile .container .profile_photo {margin-right: 100px;}
 main #profile .container .profile_photo img {}
 main #profile .container .info {
     display: flex; flex-flow:column wrap;
-    height: 580px;
+    height: 580px; width: 100%;
 }
 main #profile .container .info li {
-    margin-bottom: 30px; width: 50%;
+    margin-bottom: 30px; width: 40%;
     margin-right: 60px;
 }
 main #profile .container .info li h2 {font-size: 1.25rem; line-height: 40px; font-weight: 700;}
@@ -73,12 +73,12 @@ main #profile .container .info li p {line-height: 40px;}
 main section .sub_title {padding: 70px 0; text-align: center;}
 main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
 /* #project */
-main #project {height: 100vh;}
+main #project {}
 main #project .sub_title {}
 main #project .sub_title h1 {}
 main #project .container {display: flex; justify-content: space-between; align-items: center;}
-main #project .container p {}
-main #project .container p img {}
+main #project .container p {margin-right: 100px;}
+main #project .container p img {width: 100%;}
 main #project .container .info {display: flex; flex-flow:column nowrap; width: 40%;}
 main #project .container .info h2 {font-size: 1.953rem; font-weight: 700;}
 main #project .container .info p {font-size: 1.25rem; margin: 20px 0 50px;}
@@ -100,6 +100,7 @@ main #project .container .link a {
     border-radius: 10px;
     padding: 20px;
     font-size: 1.25rem;
+    white-space: nowrap;
 }
 main #project .container .link a:last-child {background-color: #000; color:#fff;}
 main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
@@ -124,9 +125,10 @@ main #design .tab_contents .contents {
 main #design .tab_contents .contents a {
     background-color: #B2B1B9;
     width: calc(33.3% - 40px / 3);
-    height: 500px;
+    /* height: 500px; */
     /* display: block; */
 }
+main #design .tab_contents .contents a img {width: 100%;}
 /* footer */
 footer {text-align: center; padding: 70px 0;}
 footer .title {display: flex; justify-content: center; align-items: center;}

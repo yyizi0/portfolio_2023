@@ -1,0 +1,17 @@
+@media screen and (max-width:1390px) {
+    /* profile */
+    main #profile .container .info {height: 1200px; }
+    main #profile .container .info li {width: 100%;}
+    /* project */
+    main #project .container .info {width: 100%;}
+    main #project .container {flex-flow:column nowrap; align-items: center;}
+    main #project .container p {margin-bottom: 70px;}
+}/* 1390px end */
+@media screen and (max-width:1240px) {
+    main #design .tab_contents .contents a {width: calc(50% - 20px / 2);}
+}
+@media screen and (max-width:1100px) {
+    /* header */
+    header .gnb nav {display: none;}
+    main #home .scroll {display: none;}
+}
