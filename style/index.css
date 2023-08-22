@@ -1,16 +1,22 @@
-header, main, footer {max-width: 1440px; margin:0 auto;}
+header, main, footer {max-width: 1440px; min-width: 900px; margin:0 auto;}
 body, html {scroll-behavior: smooth;}
 /* header */
 header {
-    padding-top: 70px; display: flex;
+    position: fixed; 
+    top: 0; left: 0;
+    padding: 70px;
+    background-color: yellow
+}
+header .gnb {
+    display: flex;
     justify-content: space-between;
 }
-header h1 {}
-header h1 a {font-weight: 700; font-size: 1.563rem;}
-header p {font-size: 1.563rem; color: #B2B1B9;}
-header nav {display: flex; gap:20px;}
-header nav a {font-size: 1.25rem; color: #B2B1B9;}
-header nav a.active {font-weight: 700; color:#000;}
+header .gnb h1 {}
+header .gnb h1 a {font-weight: 700; font-size: 1.563rem;}
+header .gnb p {font-size: 1.563rem; color: #B2B1B9;}
+header .gnb nav {display: flex; gap:20px;}
+header .gnb nav a {font-size: 1.25rem; color: #B2B1B9;}
+header .gnb nav a.active {font-weight: 700; color:#000;}
 /* aside */
 /* aside {
     position: fixed; right: 0; top: 0;
@@ -104,11 +110,11 @@ main #project .container .info dl {
 }
 main #project .container .info dl dt {
     font-size: 1.25rem; font-weight: 700;
-    width: 15%;
+    width: 20%;
     margin-bottom: 20px;
 }
 main #project .container .info dl dt:last-of-type {margin-bottom: 0;}
-main #project .container .info dl dd {font-size: 1.25rem; width: 85%;}
+main #project .container .info dl dd {font-size: 1.25rem; width: 80%;}
 main #project .container .link {display: flex; gap:20px; margin-bottom: 40px;}
 main #project .container .link a {
     border: 1px solid #000;
