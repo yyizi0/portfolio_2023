@@ -1,14 +1,18 @@
-header, main {padding: 0 60px;}
+header, main, footer {max-width: 1440px; margin:0 auto;}
 body, html {scroll-behavior: smooth;}
 /* header */
 header {
-    padding-top: 109px; display: flex;
+    padding-top: 70px; display: flex;
+    justify-content: space-between;
 }
-header h1 {margin-right: 55px;}
+header h1 {}
 header h1 a {font-weight: 700; font-size: 1.563rem;}
 header p {font-size: 1.563rem; color: #B2B1B9;}
+header nav {display: flex; gap:20px;}
+header nav a {font-size: 1.25rem; color: #B2B1B9;}
+header nav a.active {font-weight: 700; color:#000;}
 /* aside */
-aside {
+/* aside {
     position: fixed; right: 0; top: 0;
     display: flex;
 }
@@ -35,7 +39,7 @@ aside .bar {
 }
 aside .bar p {}
 aside .bar p img {}
-aside .bar .email {padding-top: 300px;}
+aside .bar .email {padding-top: 300px;} */
 /* main */
 main {}
 /* #home */
@@ -50,17 +54,17 @@ main #home .title h1 span {font-size: 2.5rem; font-weight: 700;}
 main #home .title p {margin-top: 37px;}
 main #home .title p img {}
 main #home .scroll {
-    padding-top: 580px; margin-right: 160px;
+    padding-top: 580px;
     animation: scroll_move 1s linear alternate infinite;
 }
 main #home .scroll img {}
 /* #profile */
-main #profile {padding: 0 140px;}
+main #profile {}
 main #profile h1 {font-size: 2.441rem; font-weight: 700; line-height: 50px;}
 main #profile h1 em {font-size: 2.441rem; font-weight: 700; color:#FFD523;}
 main #profile .container {
     display: flex; 
-    margin-top: 117px;
+    margin-top: 70px;
 }
 main #profile .container .profile_photo {margin-right: 60px;}
 main #profile .container .profile_photo img {}
@@ -68,10 +72,9 @@ main #profile .container .info {
     width: 100%;
     display: flex; flex-flow:column wrap;
     height: 580px;
-    align-content: space-between;
 }
 main #profile .container .info li {
-    margin-bottom: 30px;
+    margin-bottom: 30px; width: 40%;
 }
 main #profile .container .info li h2 {font-size: 1.25rem; line-height: 40px; font-weight: 700;}
 main #profile .container .info li h2::before {
@@ -86,7 +89,7 @@ main #profile .container .info li p {line-height: 40px;}
 main section .sub_title {padding: 70px 0; text-align: center;}
 main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
 /* #project */
-main #project {padding: 0 100px; height: 100vh;}
+main #project {height: 100vh;}
 main #project .sub_title {}
 main #project .sub_title h1 {}
 main #project .container {display: flex;}
@@ -117,7 +120,7 @@ main #project .container .link a {
 main #project .container .link a:last-child {background-color: #000; color:#fff;}
 main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
 /* #design */
-main #design {padding: 0 100px;}
+main #design {}
 main #design .sub_title {}
 main #design .sub_title h1 {}
 main #design .tab_title {display: flex; justify-content: center; gap:20px;}
@@ -136,12 +139,12 @@ main #design .tab_contents .contents {
 }
 main #design .tab_contents .contents a {
     background-color: #B2B1B9;
-    width: 400px;
-    height: 400px;
+    width: calc(33.3% - 40px / 3);
+    height: 450px;
     /* display: block; */
 }
 /* footer */
-footer {text-align: center; padding: 40px 100px;}
+footer {text-align: center; padding: 40px 0;}
 footer .title {display: flex; justify-content: center; align-items: center;}
 footer span {
     height: 1px; width: 100%;
