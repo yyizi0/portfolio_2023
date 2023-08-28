@@ -7,7 +7,9 @@ header {
     position: fixed; 
     top: 0; left: 0; z-index: 999;
     padding: 70px 100px 0;
-    /* background-color: rgba(255,255,255,0.5); */
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    transition: padding 0.3s;
 }
 header .gnb {
     display: flex;
@@ -23,6 +25,52 @@ header .gnb nav a.active {font-weight: 700; color:#000;}
 header .gnb nav a.active::after {
     content: ''; width: 100%; height: 3px; background-color: #FFD523; display: block;
     margin-top: 3px;
+}
+/* 모바일 메뉴 */
+header .open_nav {
+    display: none;
+    transition: all 0.3s;
+    position: relative;
+    width: 30px; height: 30px;
+}
+header .open_nav span {
+    background-color: #000; width: 30px; height: 2px;
+    position: absolute;
+    right: 0;
+}
+header .open_nav span:nth-child(1) {
+    -webkit-transition:  -webkit-transform .3s;
+    transition: transform .3s; top: 0;
+}
+header .open_nav span:nth-child(2) {top:10px;}
+header .open_nav span:nth-child(3) {
+    -webkit-transition:  -webkit-transform .3s;
+    transition: transform .3s; top:20px;
+}
+header .open_nav.active {}
+header .open_nav.active span:nth-child(2) {width: 0;}
+header .open_nav.active span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+}
+header .open_nav.active span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+header .m_nav_open {
+    transform: translateX(500px);
+    position: absolute;
+    right: 0; top:100px;
+    background-color: #fff;
+    height: 100vh;
+    width: 500px;
+    transition: all 0.3s;
+    z-index: 200;
+}
+header .m_nav_open.active {transform: translateX(0);}
+header .m_nav_open a {
+    display: flex; flex-flow:column nowrap; padding: 20px;
+    font-size: 1.25rem;
 }
 /* main */
 main {}
