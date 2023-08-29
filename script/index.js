@@ -50,8 +50,8 @@ nav.forEach(function(t,i){
     })
     // nav의 스크롤 이벤트
     window.addEventListener('scroll',function(){
-        if(body.scrollTop >= section[i].offsetTop){
-            console.log('.')
+        if(body.scrollTop >= section[i].offsetTop-200){
+            // console.log('.')
             for(let j of nav){j.classList.remove('active')}
             t.classList.add('active')
         }

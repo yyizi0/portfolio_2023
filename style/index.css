@@ -1,6 +1,6 @@
 header, main, footer {min-width: 900px; padding: 0 100px;}
 body, html {scroll-behavior: smooth;}
-main > section {padding-bottom: 150px;}
+main > section {padding-top: 150px;}
 /* header */
 header {
     width: 100%;
@@ -82,6 +82,7 @@ header .m_nav_open a {
 main {}
 /* #home */
 main #home {
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
 }
