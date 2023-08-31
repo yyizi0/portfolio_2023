@@ -128,12 +128,20 @@ main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
 main #project {}
 main #project .sub_title {}
 main #project .sub_title h1 {}
+.tab_title {display: flex; justify-content: center; gap:20px;}
+main #project .tab_title a {
+    font-size: 1.563rem; margin-bottom: 50px; font-weight: 700;
+    text-align: center;
+    width: 200px; border: 1px solid #000; border-radius: 10px;
+    padding: 15px;
+}
+main #project .tab_title a.active {box-shadow: 0 3px 0 #000; background-color: #FFD523;}
 main #project .container {display: flex; justify-content: space-between; align-items: center;}
 main #project .container p {margin-right: 100px;}
 main #project .container p img {width: 100%;}
 main #project .container .info {display: flex; flex-flow:column nowrap; width: 40%;}
 main #project .container .info h2 {font-size: 1.953rem; font-weight: 700;}
-main #project .container .info p {font-size: 1.25rem; margin: 20px 0 50px;}
+main #project .container .info p {font-size: 1.25rem; margin: 20px 0 50px; line-height: 30px;}
 main #project .container .info dl {
     display: flex; flex-flow: row wrap;
     margin-bottom: 50px;
