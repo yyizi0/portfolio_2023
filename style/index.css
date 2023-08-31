@@ -1,6 +1,6 @@
 header, main, footer {min-width: 900px; padding: 0 100px;}
 body, html {scroll-behavior: smooth;}
-main > section {padding-bottom: 150px;}
+main > section {padding-top: 150px;}
 /* header */
 header {
     width: 100%;
@@ -14,17 +14,20 @@ header {
 header .gnb {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header .gnb h1 {}
 header .gnb h1 a {font-weight: 700; font-size: 1.563rem;}
 header .gnb p {font-size: 1.563rem; color: #B2B1B9;}
 header .gnb nav {display: flex;}
-header .gnb nav a {font-size: 1.25rem; color: #B2B1B9; padding: 20px;}
+header .gnb nav a {font-size: 1.25rem; color: #B2B1B9; padding: 20px; transition: all 0.3s;}
 header .gnb nav a:hover {color: #FFD523;}
-header .gnb nav a.active {font-weight: 700; color:#000;}
-header .gnb nav a.active::after {
-    content: ''; width: 100%; height: 3px; background-color: #FFD523; display: block;
-    margin-top: 3px;
+header .gnb nav a:hover::after {width: 100%;}
+header .gnb nav a.active {font-weight: 700; color:#000; transition: all 0.5s;}
+header .gnb nav a.active::after {width: 100%;}
+header .gnb nav a::after {
+    content: ''; width: 0; height: 3px; background-color: #FFD523; display: block;
+    margin-top: 3px;  transition: all 0.5s;
 }
 /* 모바일 메뉴 */
 header .open_nav {
@@ -76,6 +79,7 @@ header .m_nav_open a {
 main {}
 /* #home */
 main #home {
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
 }
