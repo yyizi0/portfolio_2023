@@ -168,27 +168,23 @@ main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
 main #design {}
 main #design .sub_title {}
 main #design .sub_title h1 {}
-main #design .tab_title {display: flex; justify-content: center; gap:20px;}
-main #design .tab_title a {
-    font-size: 1.563rem; margin-bottom: 50px; font-weight: 700;
-    text-align: center;
-    width: 200px; border: 1px solid #000; border-radius: 10px;
-    padding: 15px;
-}
-main #design .tab_title a.active {box-shadow: 0 3px 0 #000; background-color: #FFD523;}
-main #design .tab_contents {}
-main #design .tab_contents .contents {
-    display: flex; flex-flow: row wrap;
+main #design .container {}
+main #design .container .contents .title {}
+main #design .container .contents .title h2 {font-size: 1.953rem; font-weight: 700;}
+main #design .container .contents {
+    padding: 50px 0;
+    display: flex; flex-flow: column wrap;
     justify-content: center;
     margin-bottom: 20px; gap:20px;
 }
-main #design .tab_contents .contents a {
+main #design .container .contents .image {display: flex; flex-flow: row wrap; gap: 40px; padding: 30px 0;}
+main #design .container .contents .image a {
     background-color: #B2B1B9;
-    width: calc(33.3% - 40px / 3);
-    /* height: 500px; */
-    /* display: block; */
+    width: calc(33.3% - 80px / 3);
+    display: block;
 }
-main #design .tab_contents .contents a img {width: 100%;}
+main #design .container .detail .image a {height: 530px; overflow: hidden;}
+main #design .contents .image a img {width: 100%;}
 /* footer */
 footer {text-align: center; padding: 70px 0;}
 footer .title {display: flex; justify-content: center; align-items: center;}
