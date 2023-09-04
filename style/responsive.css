@@ -15,4 +15,6 @@
     header .gnb nav {display: none;}
     main #home .scroll {display: none;}
     header .open_nav {display: block;}
+    .container .img-popup .popup-inner {width: 90%;}
+    .container .img-popup .popup-inner .close-btn img {width: 20px;}
 }

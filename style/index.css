@@ -1,3 +1,4 @@
+/* 공통 css */
 header, main, footer {min-width: 900px; padding: 0 100px;}
 body, html {scroll-behavior: smooth;}
 main > section {padding-top: 150px;}
@@ -107,6 +108,7 @@ main #profile .container .profile_photo img {}
 main #profile .container .info {
     display: flex; flex-flow:column wrap;
     height: 580px; width: 100%;
+    align-items: flex-end;
 }
 main #profile .container .info li {
     margin-bottom: 30px; width: 40%;
@@ -164,6 +166,15 @@ main #project .container .link a {
 }
 main #project .container .link a:last-child {background-color: #000; color:#fff;}
 main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
+/* 이미지 팝업 */
+.blind {overflow: hidden; position: absolute; width: 1px; height: 1px; font-size: 12px; clip: rect(1px, 1px, 1px, 1px);}
+.container .img-popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); visibility: hidden; opacity: 0; transition: all 0.3s; z-index: 10000;}
+.container .img-popup.active {visibility: visible; opacity: 1;}
+.container .img-popup .popup-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; overflow-y: auto;}
+.container .img-popup .popup-inner > img {display: block; width: 100%; margin: 0 auto;}
+.container .img-popup .close-btn {display: flex; display: -webkit-flex; display: -ms-flexbox; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; border-radius: 50%; justify-content: center; align-items: center; color: #fff; font-size: 30px;}
+.container .img-popup .close-btn i {transition: all 0.3s;}
+.container .img-popup .close-btn:hover i {transform: rotate(180deg);}
 /* #design */
 main #design {}
 main #design .sub_title {}
@@ -180,10 +191,11 @@ main #design .container .contents {
 main #design .container .contents .image {display: flex; flex-flow: row wrap; gap: 40px; padding: 30px 0;}
 main #design .container .contents .image a {
     background-color: #B2B1B9;
-    width: calc(33.3% - 80px / 3);
+    width: calc(25% - 120px / 4);
     display: block;
 }
-main #design .container .detail .image a {height: 530px; overflow: hidden;}
+main #design .container .detail .image a,
+main #design .container .cardnews .image a {height: 395px; overflow: hidden;}
 main #design .contents .image a img {width: 100%;}
 /* footer */
 footer {text-align: center; padding: 70px 0;}
