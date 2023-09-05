@@ -197,6 +197,13 @@ main #design .container .contents .image a {
 main #design .container .detail .image a,
 main #design .container .cardnews .image a {height: 395px; overflow: hidden;}
 main #design .contents .image a img {width: 100%;}
+/* #etc */
+main #etc {}
+main #etc .etc_slide {}
+main #etc .etc_slide .swiper-wrapper {}
+main #etc .etc_slide .swiper-wrapper .swiper-slide {}
+main #etc .etc_slide .swiper-wrapper .swiper-slide a {display: block; width: 700px;}
+main #etc .etc_slide .swiper-wrapper .swiper-slide a img {width: 100%;}
 /* footer */
 footer {text-align: center; padding: 70px 0;}
 footer .title {display: flex; justify-content: center; align-items: center;}
