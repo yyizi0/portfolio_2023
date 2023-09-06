@@ -60,7 +60,7 @@ nav.forEach(function(t,i){
 // 이미지팝업
 $(function(){
     // 변수 선언
-    var imageButton = $('.contents .image a');
+    var imageButton = $('.image a');
     var popup = $('.img-popup');
     var closeButton = popup.find('.close-btn');
     var htmlAndBody = $('html, body');
@@ -84,10 +84,6 @@ $(function(){
         e.preventDefault();
         removePopup();
     });
-    // 팝업창 검은배경과 닫기 버튼을 제외한 나머지 부분 클릭시 닫히지 않도록 하기
-    popup.find('> .popup-inner').on('click', function(e){
-        e.stopPropagation();
-    })
     // 팝업 생성 함수
     function createPopup(){
         popup.addClass('active');
@@ -106,4 +102,13 @@ $(function(){
 const etc_slide = new Swiper('.etc_slide',{
     autoplay:{delay:2000},
     slidesPerView:3,
+    loop:true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable : true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
