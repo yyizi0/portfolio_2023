@@ -103,6 +103,7 @@ const etc_slide = new Swiper('.etc_slide',{
     autoplay:{delay:2000},
     slidesPerView:3,
     loop:true,
+    spaceBetween:20,
     pagination: {
         el: '.swiper-pagination',
         clickable : true,
@@ -110,5 +111,10 @@ const etc_slide = new Swiper('.etc_slide',{
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+        900:{slidesPerView:1},
+        1240:{slidesPerView:2},
+        1800:{slidesPerView:3},
     },
 })

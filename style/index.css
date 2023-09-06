@@ -126,46 +126,7 @@ main #profile .container .info li p {line-height: 40px;}
 /* title 공통 css */
 main section .sub_title {padding: 70px 0; text-align: center;}
 main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
-/* #project */
-main #project {}
-main #project .sub_title {}
-main #project .sub_title h1 {}
-.tab_title {display: flex; justify-content: center; gap:20px;}
-main #project .tab_title a {
-    font-size: 1.563rem; margin-bottom: 50px; font-weight: 700;
-    text-align: center;
-    width: 200px; border: 1px solid #000; border-radius: 10px;
-    padding: 15px;
-}
-main #project .tab_title a.active {box-shadow: 0 3px 0 #000; background-color: #FFD523;}
-main #project .container {display: flex; justify-content: space-between; align-items: center;}
-main #project .container p {margin-right: 100px;}
-main #project .container p img {width: 100%;}
-main #project .container .info {display: flex; flex-flow:column nowrap; width: 40%;}
-main #project .container .info h2 {font-size: 1.953rem; font-weight: 700;}
-main #project .container .info p {font-size: 1.25rem; margin: 20px 0 50px; line-height: 30px;}
-main #project .container .info dl {
-    display: flex; flex-flow: row wrap;
-    margin-bottom: 50px;
-}
-main #project .container .info dl dt {
-    font-size: 1.25rem; font-weight: 700;
-    width: 20%;
-    margin-bottom: 20px;
-}
-main #project .container .info dl dt:last-of-type {margin-bottom: 0;}
-main #project .container .info dl dd {font-size: 1.25rem; width: 80%;}
-main #project .container .link {display: flex; gap:20px; margin-bottom: 40px;}
-main #project .container .link a {
-    border: 1px solid #000;
-    box-shadow: 0 3px 0 #000;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 1.25rem;
-    white-space: nowrap;
-}
-main #project .container .link a:last-child {background-color: #000; color:#fff;}
-main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
+
 /* 이미지 팝업 */
 .blind {overflow: hidden; position: absolute; width: 1px; height: 1px; font-size: 12px; clip: rect(1px, 1px, 1px, 1px);}
 .img-popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); visibility: hidden; opacity: 0; transition: all 0.3s; z-index: 10000;}
@@ -175,6 +136,15 @@ main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
 .img-popup .close-btn {display: flex; display: -webkit-flex; display: -ms-flexbox; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; border-radius: 50%; justify-content: center; align-items: center; color: #fff; font-size: 30px;}
 .img-popup .close-btn i {transition: all 0.3s;}
 .img-popup .close-btn:hover i {transform: rotate(180deg);}
+/* #appdesign */
+main #appdesign {}
+main #appdesign .container {}
+main #appdesign .container .contents {display: flex; justify-content: space-between; align-items: center;}
+main #appdesign .container .contents a {background-color: #B2B1B9; display: block; width: calc(33.3% - 80px / 3);}
+main #appdesign .container .contents a p {}
+main #appdesign .container .contents a p img {width: 100%;}
+main #appdesign .container .contents a h2 {font-size: 1.25rem; margin-top: 20px;}
+
 /* #design */
 main #design {}
 main #design .sub_title {}
@@ -202,7 +172,7 @@ main #etc {position: relative; padding-bottom: 50px;}
 main #etc .etc_slide {}
 main #etc .etc_slide .swiper-wrapper {}
 main #etc .etc_slide .swiper-wrapper .swiper-slide {position: relative;}
-main #etc .etc_slide .swiper-wrapper .swiper-slide a {display: block; width: 550px; height: 300px;}
+main #etc .etc_slide .swiper-wrapper .swiper-slide a {display: block; width: 100%; height: 300px;}
 main #etc .etc_slide .swiper-wrapper .swiper-slide a img {width: 100%;}
 main #etc .etc_slide .swiper-wrapper .swiper-slide:hover .txt {bottom: 0;}
 main #etc .etc_slide .swiper-wrapper .swiper-slide .txt {
@@ -210,6 +180,7 @@ main #etc .etc_slide .swiper-wrapper .swiper-slide .txt {
     bottom: -100px; left: 0; background-color: rgba(255,255,255,0.5); 
     width: 100%;
     transition: all 0.3s;
+    pointer-events: none;
 }
 main #etc .etc_slide .swiper-wrapper .swiper-slide h2 {font-size: 1.25rem; font-weight: 700; margin-bottom: 20px;}
 main #etc .etc_slide .swiper-button-prev::after,
@@ -222,6 +193,51 @@ main #etc .etc_slide .swiper-wrapper  {}
 main #etc .swiper-pagination {bottom:0;}
 main #etc .swiper-pagination-bullet {transition: all 0.3s;}
 main #etc .swiper-pagination-bullet-active {background-color: #FFD523; width: 20px; border-radius: 10px;}
+/* #project */
+main #project {}
+main #project .sub_title {}
+main #project .sub_title h1 {}
+.tab_title {display: flex; justify-content: center; gap:20px;}
+main #project .tab_title a:hover {background-color: #ccc;}
+main #project .tab_title a {
+    font-size: 1.563rem; margin-bottom: 50px; font-weight: 700;
+    text-align: center;
+    width: 200px; border: 1px solid #000; border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s;
+}
+main #project .tab_title a.active {box-shadow: 0 3px 0 #000; background-color: #FFD523;}
+main #project .container {display: flex; justify-content: space-between; align-items: center;}
+main #project .container p {margin-right: 100px;}
+main #project .container p img {width: 100%;}
+main #project .container .info {display: flex; flex-flow:column nowrap; width: 40%;}
+main #project .container .info h2 {font-size: 1.953rem; font-weight: 700;}
+main #project .container .info p {font-size: 1.25rem; margin: 20px 0 50px; line-height: 30px;}
+main #project .container .info dl {
+    display: flex; flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+main #project .container .info dl dt {
+    font-size: 1.25rem; font-weight: 700;
+    width: 20%;
+    margin-bottom: 20px;
+}
+main #project .container .info dl dt:last-of-type {margin-bottom: 0;}
+main #project .container .info dl dd {font-size: 1.25rem; width: 80%;}
+main #project .container .link {display: flex; gap:20px; margin-bottom: 40px;}
+main #project .container .link a:hover {background-color: #ccc;}
+main #project .container .link a {
+    border: 1px solid #000;
+    box-shadow: 0 3px 0 #000;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+main #project .container .link a:last-child {background-color: #000; color:#fff; border: 1px solid #fff;}
+main #project .container .link a:last-child:hover {background-color: #FFD523; color:#000; border: 1px solid #000;}
+main #project .container a.before {text-decoration: underline; color: #B2B1B9;}
 /* footer */
 footer {text-align: center; padding: 70px 0;}
 footer .title {display: flex; justify-content: center; align-items: center;}

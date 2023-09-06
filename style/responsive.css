@@ -1,3 +1,6 @@
+@media screen and (max-width:1240px) {
+    main #etc .etc_slide .swiper-wrapper .swiper-slide a {height: 400px;}
+}
 @media screen and (max-width:1390px) {
     /* profile */
     main #profile .container .info {height: 1200px; }
@@ -9,6 +12,7 @@
 }/* 1390px end */
 @media screen and (max-width:1240px) {
     main #design .tab_contents .contents a {width: calc(50% - 20px / 2);}
+    main #design .container .contents .image a {width: calc(33.3% - 80px / 3);}
 }
 @media screen and (max-width:1100px) {
     /* header */
@@ -17,4 +21,5 @@
     header .open_nav {display: block;}
     .container .img-popup .popup-inner {width: 90%;}
     .container .img-popup .popup-inner .close-btn img {width: 20px;}
+    main #design .container .contents .image a {width: calc(50% - 40px / 2);}
 }
