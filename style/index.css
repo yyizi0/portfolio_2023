@@ -140,7 +140,7 @@ main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
 main #appdesign {}
 main #appdesign .container {}
 main #appdesign .container .contents {display: flex; justify-content: space-between; align-items: center;}
-main #appdesign .container .contents a {background-color: #B2B1B9; display: block; width: calc(33.3% - 80px / 3);}
+main #appdesign .container .contents a {/* background-color: aqua; */ display: block; width: calc(33.3% - 80px / 3);}
 main #appdesign .container .contents a p {}
 main #appdesign .container .contents a p img {width: 100%;}
 main #appdesign .container .contents a h2 {font-size: 1.25rem; margin-top: 20px;}
@@ -160,10 +160,10 @@ main #design .container .contents {
 }
 main #design .container .contents .image {display: flex; flex-flow: row wrap; gap: 40px; padding: 30px 0;}
 main #design .container .contents .image a {
-    background-color: #B2B1B9;
     width: calc(25% - 120px / 4);
     display: block;
 }
+main #design .container .banner .image a {width: calc(50% - 40px / 2);}
 main #design .container .detail .image a,
 main #design .container .cardnews .image a {height: 395px; overflow: hidden;}
 main #design .contents .image a img {width: 100%;}
