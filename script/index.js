@@ -6,7 +6,6 @@ const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents .container')
 const open_nav = document.querySelector('.open_nav')
 const m_nav_open = document.querySelector('.m_nav_open')
-console.log(tab_title,tab_contents,nav)
 window.addEventListener('scroll',function(){
     if(window.scrollY > 0){
         // console.log('.')
