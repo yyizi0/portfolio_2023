@@ -2,6 +2,10 @@
     main #etc .etc_slide .swiper-wrapper .swiper-slide a {height: 400px;}
 }
 @media screen and (max-width:1390px) {
+    /* header */
+    header .gnb nav {display: none;}
+    main #home .scroll {display: none;}
+    header .open_nav {display: block;}
     /* profile */
     main #profile .container .info {height: 1200px; }
     main #profile .container .info li {width: 100%;}
@@ -15,11 +19,9 @@
     main #design .container .contents .image a {width: calc(33.3% - 80px / 3);}
 }
 @media screen and (max-width:1100px) {
-    /* header */
-    header .gnb nav {display: none;}
-    main #home .scroll {display: none;}
-    header .open_nav {display: block;}
+    
     .container .img-popup .popup-inner {width: 90%;}
     .container .img-popup .popup-inner .close-btn img {width: 20px;}
     main #design .container .contents .image a {width: calc(50% - 40px / 2);}
+    main #profile .container {flex-flow:column nowrap;}
 }

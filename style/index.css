@@ -17,8 +17,8 @@ header .gnb {
     justify-content: space-between;
     align-items: center;
 }
-header .gnb h1 {}
-header .gnb h1 a {font-weight: 700; font-size: 1.563rem;}
+header .gnb h1 {padding: 20px 0;}
+header .gnb h1 a {font-weight: 700; font-size: 1.563rem; padding: 20px 0;}
 header .gnb p {font-size: 1.563rem; color: #B2B1B9;}
 header .gnb nav {display: flex;}
 header .gnb nav a {font-size: 1.25rem; color: #B2B1B9; padding: 20px; transition: all 0.3s;}
@@ -131,7 +131,7 @@ main section .sub_title h1 {font-size: 2.441rem; font-weight: 700;}
 .blind {overflow: hidden; position: absolute; width: 1px; height: 1px; font-size: 12px; clip: rect(1px, 1px, 1px, 1px);}
 .img-popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); visibility: hidden; opacity: 0; transition: all 0.3s; z-index: 10000;}
 .img-popup.active {visibility: visible; opacity: 1;}
-.img-popup .popup-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; overflow-y: auto;}
+.img-popup .popup-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1200px; height: 800px; overflow-y: auto;}
 .img-popup .popup-inner > img {display: block; width: 100%; margin: 0 auto;}
 .img-popup .close-btn {display: flex; display: -webkit-flex; display: -ms-flexbox; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; border-radius: 50%; justify-content: center; align-items: center; color: #fff; font-size: 30px;}
 .img-popup .close-btn i {transition: all 0.3s;}

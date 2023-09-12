@@ -99,6 +99,8 @@ $(function(){
         htmlAndBody.css('overflow-y', 'visible');
     }
 })
+
+// swiper
 const etc_slide = new Swiper('.etc_slide',{
     autoplay:{delay:2000},
     slidesPerView:3,
